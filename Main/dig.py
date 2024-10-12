@@ -1,5 +1,8 @@
 import pyautogui
 import time
+import random
+
+rand_list = [4,5]
 
 # Переменные
 foodOne = '4' # Переменная для еды
@@ -23,11 +26,15 @@ while True:
         flag = True
         time.sleep(5)
     else:
+        foodOne = random.choice(rand_list)
+        print(foodOne)
         pyautogui.moveTo(centrW,centrH) # Перемещение курсора по XY на центр экрана
         pyautogui.click() # Клик мыши
+        print('Копаю')
         time.sleep(4) #Таймер
         pyautogui.press('space')
+        print('Забираю')
         time.sleep(1) #Таймер
-        pyautogui.press(foodOne)
-        pyautogui.press(foodTwo)
-        time.sleep(30) #Таймер
+        pyautogui.press(str(foodOne))
+        print('Покушал')
+        time.sleep(30) #Таймер 
