@@ -15,7 +15,7 @@ flag = False
 # 4 секунды от копания до пробела
 
 
-# Определение середины экрана
+# Определение середины экрана ПЕРЕНЕСТИ В ОТДЕЛЬНУЮ ФУНЦИЮ ТУТ НАХУЙ НЕ НУЖНА!!!!!!!
 scrWidth, scrHeight = pyautogui.size()
 print(scrWidth, scrHeight) # Разрешение экрана
 centrW, centrH = scrWidth/2, scrHeight/2
