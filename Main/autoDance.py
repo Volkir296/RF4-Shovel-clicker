@@ -10,10 +10,10 @@ while True:
         time.sleep(5)
     else:
         pyautogui.keyDown('A')
-        time.sleep(0.25)
+        time.sleep(0.15)
         pyautogui.keyUp('A')
         pyautogui.keyDown('D')
-        time.sleep(0.25)
+        time.sleep(0.15)
         pyautogui.keyUp('D')
 
 
